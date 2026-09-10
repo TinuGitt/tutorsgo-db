@@ -1,0 +1,100 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "TutorsGoDatabaseSchema",
+  "description": "Validation schema for verified tutor profiles in TutorsGo (Nagaland)",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": [
+      "id",
+      "name",
+      "district",
+      "area",
+      "subjects",
+      "monthly_fee",
+      "phone",
+      "maps_url",
+      "bio",
+      "verified"
+    ],
+    "additionalProperties": false,
+    "properties": {
+      "id": {
+        "type": "string",
+        "pattern": "^TG-[0-9]{4}-[0-9]{3,}$",
+        "description": "Unique identifier, e.g. TG-2026-001"
+      },
+      "name": {
+        "type": "string",
+        "minLength": 2,
+        "maxLength": 80,
+        "description": "Public name or initial of the tutor"
+      },
+      "district": {
+        "type": "string",
+        "enum": [
+          "Dimapur",
+          "Kohima",
+          "Mokokchung",
+          "Chümoukedima",
+          "Tuensang",
+          "Wokha",
+          "Zunheboto",
+          "Phek",
+          "Mon",
+          "Peren",
+          "Longleng",
+          "Kiphire",
+          "Noklak",
+          "Shamator",
+          "Tseminyu",
+          "Niuland"
+        ],
+        "description": "District in Nagaland"
+      },
+      "area": {
+        "type": "string",
+        "minLength": 2,
+        "maxLength": 100,
+        "description": "Neighborhood, Colony, or Ward"
+      },
+      "subjects": {
+        "type": "array",
+        "minItems": 1,
+        "items": {
+          "type": "string",
+          "minLength": 2,
+          "maxLength": 50
+        },
+        "description": "Subjects taught by the tutor"
+      },
+      "monthly_fee": {
+        "type": "integer",
+        "minimum": 0,
+        "maximum": 50000,
+        "description": "Monthly tutoring fee in INR"
+      },
+      "phone": {
+        "type": "string",
+        "pattern": "^[0-9]{10,13}$",
+        "description": "WhatsApp contact number with country code without plus sign (e.g. 919366590311)"
+      },
+      "maps_url": {
+        "type": "string",
+        "format": "uri",
+        "pattern": "^https?://(maps\\.google\\.com|goo\\.gl/maps|maps\\.app\\.goo\\.gl|www\\.google\\.com/maps).*$",
+        "description": "Google Maps link to tuition center or area location"
+      },
+      "bio": {
+        "type": "string",
+        "minLength": 5,
+        "maxLength": 300,
+        "description": "Brief qualifications, achievements, and teaching methodology"
+      },
+      "verified": {
+        "type": "boolean",
+        "description": "Whether the tutor profile has passed TutorsGo verification"
+      }
+    }
+  }
+}

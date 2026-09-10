@@ -1,0 +1,74 @@
+[
+  {
+    "id": "TG-2026-001",
+    "name": "Longumer T.",
+    "district": "Dimapur",
+    "area": "Nagarjan",
+    "subjects": ["Mathematics", "Physics"],
+    "monthly_fee": 2500,
+    "phone": "919366590311",
+    "maps_url": "https://maps.google.com/?q=Nagarjan,Dimapur",
+    "bio": "NBSE Topper. Specializes in structural problem solving and exam prep.",
+    "verified": true
+  },
+  {
+    "id": "TG-2026-002",
+    "name": "Vikram Dey",
+    "district": "Dimapur",
+    "area": "Duncan Basti",
+    "subjects": ["Accountancy", "Economics"],
+    "monthly_fee": 4000,
+    "phone": "919366590311",
+    "maps_url": "https://maps.google.com/?q=Duncan+Basti,Dimapur",
+    "bio": "Professional Commerce Coaching for Higher Secondary students.",
+    "verified": true
+  },
+  {
+    "id": "TG-2026-003",
+    "name": "Kezhalezo P.",
+    "district": "Kohima",
+    "area": "High School Colony",
+    "subjects": ["Biology", "Chemistry"],
+    "monthly_fee": 3000,
+    "phone": "919366590311",
+    "maps_url": "https://maps.google.com/?q=High+School+Colony,Kohima",
+    "bio": "Specialist in NEET foundation and Class 12 Board exams.",
+    "verified": true
+  },
+  {
+    "id": "TG-2026-004",
+    "name": "Moamenla Jamir",
+    "district": "Mokokchung",
+    "area": "Arkong Ward",
+    "subjects": ["English", "History"],
+    "monthly_fee": 2000,
+    "phone": "919366590311",
+    "maps_url": "https://maps.google.com/?q=Arkong+Ward,Mokokchung",
+    "bio": "M.A. English literature graduate. Focus on grammatical precision, essay composition, and board exam clarity.",
+    "verified": true
+  },
+  {
+    "id": "TG-2026-005",
+    "name": "Imkongsunep Ao",
+    "district": "Chümoukedima",
+    "area": "Ward 4, 5th Mile",
+    "subjects": ["Mathematics", "Chemistry", "Computer Science"],
+    "monthly_fee": 3200,
+    "phone": "919366590311",
+    "maps_url": "https://maps.google.com/?q=5th+Mile,Chümoukedima",
+    "bio": "B.Tech graduate offering rigorous conceptual grounding for secondary and higher secondary science streams.",
+    "verified": true
+  },
+  {
+    "id": "TG-2026-006",
+    "name": "Toshimenla A.",
+    "district": "Kohima",
+    "area": "Midland Colony",
+    "subjects": ["Mathematics", "Science"],
+    "monthly_fee": 2200,
+    "phone": "919366590311",
+    "maps_url": "https://maps.google.com/?q=Midland+Colony,Kohima",
+    "bio": "Patient, concept-driven tutor for Class 8-10 NBSE & CBSE curriculum with weekly test assessments.",
+    "verified": true
+  }
+]
